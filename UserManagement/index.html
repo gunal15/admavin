@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+  
+      <div class="container">
+        <div class="d-flex bd-highlight mb-3">
+          <div class="d-flex me-auto p-2 bd-highlight">
+            <input type="text" name="" id="myInput" class="form-control" placeholder="Search..." onkeyup="searchBar()" />
+            <button class="btn btn-success mx-2">Search</button>    
+            <button id="resetButton" class="btn btn-dark mx-2">Reset</button>
+          </div>
+          <div class="p-2 bd-highlight">
+            <button type="button" class="btn btn-primary" onclick="showUserCreateBox()">Add User</button>
+          </div>
+        </div>
+      
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm">
+            <thead>
+              <tr class="bg-light">
+                <th scope="col">#</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Mail</th>
+                <th scope="col">Contact Number</th>
+                <th scope="col">Designation</th>
+                <th scope="col" colspan="3">Action</th>
+              </tr>
+            </thead>
+            <tbody id="mytable">
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+  
+      <script src="script.js"></script>
+    </body>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.bg-mynav {
+    background-color: #c1dcf6;
+    color: black;
+  }
+  
+.navbar-brand{
+display: flex;
+justify-content: space-around !important;
+align-items: center !important;
+}
+
+  body {
+    font-size: 1.25rem;
+    background-color: #f6f8fa;
+  }
+  
+  td {
+      line-height: 3rem;
+  }
